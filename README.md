@@ -17,9 +17,9 @@
 
 # ![Serenity BDD](docs/node.png "Logo Title Text 1")
 
-### Gradle
+### npm
 
-* Es un gestor de proyectos.
+* npm es un administrador de paquetes para el lenguaje de programación JavaScript.
 
 # ![Serenity BDD](docs/cucumber.png "Logo Title Text 1")
 
@@ -47,6 +47,7 @@
 
 # Comandos para ejecutar el proyecto.
 
+* npm install
 * npm run test
 
 ## Autor
