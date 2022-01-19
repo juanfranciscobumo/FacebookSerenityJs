@@ -1,4 +1,7 @@
-const { ConsoleReporter } = require('@serenity-js/console-reporter'), { ArtifactArchiver } = require('@serenity-js/core'), { Photographer, TakePhotosOfInteractions } = require('@serenity-js/protractor'), { SerenityBDDReporter } = require('@serenity-js/serenity-bdd'),
+const { ConsoleReporter } = require('@serenity-js/console-reporter'),
+    { ArtifactArchiver } = require('@serenity-js/core'),
+    { Photographer, TakePhotosOfInteractions } = require('@serenity-js/protractor'),
+    { SerenityBDDReporter } = require('@serenity-js/serenity-bdd'),
     isCI = require('is-ci');
 
 exports.config = {
@@ -32,7 +35,7 @@ exports.config = {
 
     cucumberOpts: {
         require: [
-            'src/steps/*.ts',
+            'src/**/*.ts',
             'src/support/setup.ts',
         ],
         'require-module': [
@@ -61,16 +64,16 @@ exports.config = {
 
         chromeOptions: {
             args: [
-                    '--no-sandbox',
-                    '--disable-infobars',
-                    '--disable-dev-shm-usage',
-                    '--disable-extensions',
-                    '--start-maximized',
-                    '--incognito',
-                    '--log-level=3',
-                    '--disable-gpu',
-                    '--window-size=1920,1080',
-                ].concat(isCI ? ['--headless'] : []) // run in headless mode on the CI server
+                '--no-sandbox',
+                '--disable-infobars',
+                '--disable-dev-shm-usage',
+                '--disable-extensions',
+                '--start-maximized',
+                '--incognito',
+                '--log-level=3',
+                '--disable-gpu',
+                '--window-size=1920,1080',
+            ].concat(isCI ? ['--headless'] : []) // run in headless mode on the CI server
         }
     }
 };

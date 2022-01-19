@@ -2,7 +2,7 @@ import { UsuarioInterface } from "../interfaces/UsuarioInterface";
 import { Usuario } from "../models/Usuario";
 export class UsuarioBuilder implements UsuarioInterface{
     private email: string;
-    private clave:string;
+    private clave: string;
 
     constructor(email: string) {
         this.email=email;

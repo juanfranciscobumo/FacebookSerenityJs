@@ -1,7 +1,7 @@
 export class Usuario{
   
     private email: string;
-    private clave:string;
+    private clave: string;
     
     public getUsuario(): string {
         return this.email;

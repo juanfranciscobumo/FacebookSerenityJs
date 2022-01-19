@@ -27,6 +27,10 @@
 
 * Es una herramienta que permite escribir los casos de prueba.
 
+# ![Typescript](docs/typescript.png "Logo Title Text 1")
+### Typescript
+* TypeScript es un lenguaje de programación desarrollado y mantenido por Microsoft. Es un superconjunto sintáctico estricto de JavaScript y agrega escritura estática opcional al lenguaje. TypeScript está diseñado para el desarrollo de aplicaciones grandes y transcompila a JavaScript.
+
 ## La estructura completa del proyecto es la siguiente:
 
 * Features: Utiliza lenguaje Gherkin y contienen los escenarios de negocio del caso de prueba. 
